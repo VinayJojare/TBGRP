@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'b9_library',
         'USER': 'root',
-        'PASSWORD': 'Root1234',
+        'PASSWORD':      # add database password
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
