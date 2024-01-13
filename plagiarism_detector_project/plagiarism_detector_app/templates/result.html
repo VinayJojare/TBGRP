@@ -1,0 +1,21 @@
+<!-- plagiarism_detector_app/templates/plagiarism_detector_app/result.html -->
+{% extends 'index.html' %}
+
+{% block content %}
+  <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+    <h2 style="color: #333; text-align: center;">Plagiarism Detection Result</h2>
+    <div style="margin-bottom: 20px;">
+      <p style="font-weight: bold; margin-bottom: 8px;">Original Text:</p>
+      <p style="margin-bottom: 16px;">{{ instance.original_text }}</p>
+
+      <p style="font-weight: bold; margin-bottom: 8px;">Suspicious Text:</p>
+      <p style="margin-bottom: 16px;">{{ instance.suspicious_text }}</p>
+
+      <p style="font-weight: bold; margin-bottom: 8px;">Result:</p>
+      <p style="font-size: 18px; margin-bottom: 20px;">{{ instance.result }}</p>
+    </div>
+
+    <p style="text-align: center; font-size: 16px; color: #333;">Result</p>
+  </div>
+{% endblock %}
+

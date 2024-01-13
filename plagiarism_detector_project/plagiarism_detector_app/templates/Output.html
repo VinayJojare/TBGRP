@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Detection Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #baf1e6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .result-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .plagiarism-detected {
+            color: #ff3636;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .no-plagiarism-detected {
+            color: #1c7c03;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        {% if instance %}
+        <h3 style="color: #0826d1; text-align: center;">Result:</h3>
+        <p style="color:black ;text-align:center; font-size: 18px; margin-bottom: 20px;">{{ instance }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
